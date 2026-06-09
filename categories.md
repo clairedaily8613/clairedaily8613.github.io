@@ -6,7 +6,7 @@ permalink: /categories/
 
 <div class="container">
   <div class="archive-header">
-    <h1>分類</h1>
+    <h1>我的足跡</h1>
   </div>
 
   <div class="category-group">
