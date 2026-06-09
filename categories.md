@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 分類 — Claire Daily
+title: 足跡 — Claire Daily
 permalink: /categories/
 ---
 
