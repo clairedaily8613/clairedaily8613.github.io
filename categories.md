@@ -12,7 +12,7 @@ permalink: /categories/
   <div class="category-group">
     <h2 class="category-title">電子報</h2>
     <div class="year-list">
-      {% assign years = site.posts | map: "date" | map: "year" | uniq | sort | reverse %}
+      {% assign years = site.posts | group_by_exp: "post", "post.date | date: '%Y'" | map: "name" | reverse %}
       {% for year in years %}
       <a href="/categories/{{ year }}/" class="year-link">{{ year }}</a>
       {% endfor %}
