@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<div class="container">
+  <div class="article-header">
+    <a href="{{ '/archive' | relative_url }}" class="article-back">← 旅途紀錄</a>
+    {% if page.week %}<div class="article-week-tag">{{ page.week }}</div>{% endif %}
+    <h1>{{ page.title }}</h1>
+    <span class="post-date">{{ page.date | date: "%Y 年 %-m 月 %-d 日" }}</span>
+  </div>
+
+  <div class="article-body">
+    {{ content }}
+  </div>
+
+  <footer class="article-footer">
+    <div class="subscribe-cta">
+      <h3>喜歡這篇嗎？</h3>
+      <p>訂閱電子報，每週直接寄到你的信箱。</p>
+      <a href="https://newsletter.clairedaily.com/landingpagef" target="_blank" class="btn-subscribe">訂閱電子報</a>
+    </div>
+    <nav class="nav-posts">
+      {% if page.previous %}
+      <a href="{{ page.previous.url }}" class="nav-post-link">
+        上一篇
+        <strong>{{ page.previous.title }}</strong>
+      </a>
+      {% endif %}
+      {% if page.next %}
+      <a href="{{ page.next.url }}" class="nav-post-link">
+        下一篇
+        <strong>{{ page.next.title }}</strong>
+      </a>
+      {% endif %}
+    </nav>
+  </footer>
+</div>

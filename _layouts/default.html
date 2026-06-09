@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-TW">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +8,22 @@
   <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
 </head>
 <body>
-  <main class="page">
+  <header class="site-header">
+    <div class="container">
+      <a href="{{ '/' | relative_url }}" class="site-logo">Claire Daily</a>
+      <ul class="site-nav">
+        <li><a href="{{ '/archive' | relative_url }}" {% if page.url contains 'archive' %}class="active"{% endif %}>旅途紀錄</a></li>
+        <li><a href="https://newsletter.clairedaily.com/landingpagef" target="_blank">訂閱電子報</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
     {{ content }}
   </main>
+
+  <footer class="site-footer">
+    <div class="container">© {{ 'now' | date: "%Y" }} Claire Daily</div>
+  </footer>
 </body>
 </html>

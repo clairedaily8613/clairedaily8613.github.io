@@ -1,3 +1,10 @@
 .DS_Store
 ._*
 .__*
+
+# LLM tools
+.claude/
+.codex/
+
+# Drafts
+Drafts/

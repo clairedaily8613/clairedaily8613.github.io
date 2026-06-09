@@ -1,4 +1,19 @@
 title: Claire Daily
-description: Claire's personal website and social media hub.
+description: Claire 踏上新的旅途——每週生活紀錄。
 url: "https://clairedaily.com"
 markdown: kramdown
+permalink: /posts/:year/:slug/
+
+exclude:
+  - Doc/
+
+collections:
+  posts:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
