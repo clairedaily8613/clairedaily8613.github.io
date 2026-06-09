@@ -23,6 +23,12 @@
     {{ content }}
   </main>
 
+  <nav class="float-nav">
+    <a href="{{ '/' | relative_url }}" class="float-nav-item {% if page.url == '/' %}active{% endif %}">首頁</a>
+    <a href="{{ '/archive' | relative_url }}" class="float-nav-item {% if page.url contains 'archive' %}active{% endif %}">旅途紀錄</a>
+    <a href="{{ '/categories' | relative_url }}" class="float-nav-item {% if page.url contains 'categories' %}active{% endif %}">分類</a>
+  </nav>
+
   <footer class="site-footer">
     <div class="container">© {{ 'now' | date: "%Y" }} Claire Daily</div>
   </footer>

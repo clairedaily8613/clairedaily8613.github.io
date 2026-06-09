@@ -1,0 +1,21 @@
+---
+layout: default
+title: 分類 — Claire Daily
+permalink: /categories/
+---
+
+<div class="container">
+  <div class="archive-header">
+    <h1>分類</h1>
+  </div>
+
+  <div class="category-group">
+    <h2 class="category-title">電子報</h2>
+    <div class="year-list">
+      {% assign years = site.posts | map: "date" | map: "year" | uniq | sort | reverse %}
+      {% for year in years %}
+      <a href="/categories/{{ year }}/" class="year-link">{{ year }}</a>
+      {% endfor %}
+    </div>
+  </div>
+</div>

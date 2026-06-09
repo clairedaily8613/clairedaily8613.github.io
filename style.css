@@ -405,6 +405,78 @@ body {
   font-weight: 500;
 }
 
+/* ── 浮動膠囊導覽 ── */
+.float-nav {
+  position: fixed;
+  bottom: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 4px;
+  background: var(--primary);
+  border-radius: 999px;
+  padding: 6px;
+  box-shadow: 0 4px 24px rgba(47,74,69,0.25);
+  z-index: 100;
+}
+.float-nav-item {
+  padding: 8px 20px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(255,255,255,0.65);
+  text-decoration: none;
+  transition: background 0.15s, color 0.15s;
+  white-space: nowrap;
+}
+.float-nav-item:hover {
+  color: #fff;
+  background: rgba(255,255,255,0.1);
+}
+.float-nav-item.active {
+  background: var(--accent);
+  color: #fff;
+}
+
+/* 避免浮動導覽擋住 footer */
+.site-footer { margin-bottom: 80px; }
+
+/* ── 分類頁 ── */
+.category-group {
+  margin-bottom: 48px;
+}
+.category-title {
+  font-family: 'Lora', serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+}
+.year-list {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.year-link {
+  display: inline-block;
+  padding: 10px 24px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--primary);
+  font-size: 15px;
+  font-weight: 500;
+  transition: border-color 0.15s, background 0.15s;
+}
+.year-link:hover {
+  border-color: var(--accent);
+  background: #fdf5f2;
+  color: var(--accent);
+}
+
 @media (max-width: 520px) {
   .hero { padding: 48px 0 36px; }
   .hero h1 { font-size: 2rem; }
