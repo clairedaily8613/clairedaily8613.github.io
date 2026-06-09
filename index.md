@@ -20,10 +20,7 @@ description: Claire 踏上新的旅途——每週生活紀錄。
     </div>
     <h2>{{ latest.title }}</h2>
     <p class="post-preview">{{ latest.content | strip_html | truncatewords: 40 }}</p>
-    <a href="{{ latest.url }}" class="read-more">
-      繼續閱讀
-      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
-    </a>
+    <a href="{{ latest.url }}" class="read-more">繼續閱讀 →</a>
   </article>
   {% endif %}
 
