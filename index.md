@@ -19,7 +19,7 @@ description: Claire 踏上新的旅途——每週生活紀錄。
       {% if latest.week %}<span class="post-week">{{ latest.week }}</span>{% endif %}
     </div>
     <h2>{{ latest.title }}</h2>
-    <p class="post-preview">{{ latest.content | strip_html | truncatewords: 40 }}</p>
+    <p class="post-preview">{{ latest.content | strip_html | truncatewords: 20 }}</p>
     <a href="{{ latest.url }}" class="read-more">繼續閱讀 →</a>
   </article>
   {% endif %}
