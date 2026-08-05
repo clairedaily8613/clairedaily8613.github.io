@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Claire Daily — Knowledge Seeker 配色預覽</title>
+<link rel="stylesheet" href="../style-seeker.css">
+<style>
+  /* 預覽頁專用，不屬於正式樣式 */
+  .pv-bar {
+    background: var(--ink); color: #fff; padding: 10px 0;
+    font-size: 12px; letter-spacing: .06em;
+  }
+  .pv-bar .container { display: flex; gap: 20px; align-items: center; }
+  .pv-bar a { color: var(--seaglass); text-decoration: none; }
+  .pv-sep {
+    margin: 0; border: none; border-top: 8px solid var(--sage-pale);
+  }
+  .pv-tag {
+    display: inline-block; font-size: 11px; letter-spacing: .1em;
+    text-transform: uppercase; color: var(--text);
+    padding: 40px 0 0; width: min(720px, calc(100% - 48px)); margin: 0 auto;
+  }
+  .sw-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px,1fr)); gap: 10px; }
+  .sw { border: 1px solid var(--border); border-radius: 8px; overflow: hidden; background: var(--surface); }
+  .sw i { display: block; height: 56px; }
+  .sw b { display: block; font-size: 12px; font-weight: 600; color: var(--ink); padding: 8px 10px 0; }
+  .sw small { display: block; font-size: 11px; color: var(--text); padding: 0 10px 10px; font-variant-numeric: tabular-nums; }
+</style>
+</head>
+<body>
+
+<div class="pv-bar">
+  <div class="container">
+    <strong>預覽</strong>
+    <span>style-seeker.css — 尚未套用到正式站</span>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container">
+    <a href="#" class="site-logo">Claire Daily</a>
+    <ul class="site-nav">
+      <li><a href="#archive">旅途紀錄</a></li>
+      <li><a href="#">訂閱電子報</a></li>
+    </ul>
+  </div>
+</header>
+
+<!-- ===== 首頁 ===== -->
+<p class="pv-tag">01 — 首頁 index.md</p>
+<main>
+<div class="container">
+  <section class="hero">
+    <h1>Claire 踏上新的旅途</h1>
+    <p class="hero-desc">Claire Daily 是我的每週生活紀錄。這裡有英國日常、求職進度、AI 協作、料理實驗與個人觀察，寫給正在重建生活的自己，也寫給剛好路過的你。</p>
+  </section>
+
+  <div class="latest-label"><span>最新一篇</span></div>
+  <article class="post-card-featured">
+    <div class="post-meta">
+      <span class="post-date">2026 年 8 月 3 日</span>
+      <span class="post-week">Week31</span>
+    </div>
+    <h2>2026 Week31: 我不急著升級，先把已經有的養好</h2>
+    <p class="post-preview">上週還好嗎？ 上週的我種植物種得很認真，薄荷換盆以後也開始長了。另外出門了幾趟，還又開始清理手邊的東西，看看哪些是幾乎不用的、哪些是必要的。喔對，還有歐美在飲料裡加糖漿的文化，我真的不太懂。</p>
+    <a href="#" class="read-more">繼續閱讀 →</a>
+  </article>
+
+  <section class="social-section">
+    <p class="section-title">找到我</p>
+    <div class="social-grid">
+      <a href="#" class="social-link"><span class="social-dot"></span>電子報</a>
+      <a href="#" class="social-link"><span class="social-dot"></span>Instagram</a>
+      <a href="#" class="social-link"><span class="social-dot"></span>Threads</a>
+      <a href="#" class="social-link"><span class="social-dot"></span>Facebook</a>
+    </div>
+  </section>
+</div>
+
+<hr class="pv-sep">
+
+<!-- ===== 文章頁 ===== -->
+<p class="pv-tag">02 — 文章頁 _layouts/post.html</p>
+<div class="container">
+  <div class="article-header">
+    <a href="#archive" class="article-back">← 旅途紀錄</a>
+    <div class="article-week-tag">Week31</div>
+    <h1>2026 Week31: 我不急著升級，先把已經有的養好</h1>
+    <span class="post-date">2026 年 8 月 3 日</span>
+  </div>
+
+  <div class="article-body">
+    <p>上週還好嗎？</p>
+    <p>上週的我種植物種得很認真，薄荷換盆以後也開始長了。另外出門了幾趟，還又開始清理手邊的東西，看看哪些是幾乎不用的、哪些是必要的。喔對，還有歐美在飲料裡加糖漿的文化，我真的不太懂。</p>
+    <p>先說交通。倫敦的週末至少有一天是一整天搭到飽，我印象中是 1.28 磅，但這個金額我不太確定，有錯的話記得跟我說。</p>
+    <hr>
+    <p>先說植物。薄荷換盆之後長得比我預期快，反而是原本以為好照顧的那盆一直沒動靜。<a href="#">上週的紀錄</a>裡我還在猶豫要不要再買新的，現在的想法是先把已經有的養好再說。</p>
+  </div>
+
+  <footer class="article-footer">
+    <div class="subscribe-cta">
+      <h3>喜歡這篇嗎？</h3>
+      <p>訂閱電子報，每週直接寄到你的信箱。</p>
+      <a href="#" class="btn-subscribe">訂閱電子報</a>
+    </div>
+    <nav class="nav-posts">
+      <a href="#" class="nav-post-link">上一篇<strong>2026 Week30: 獵頭、佛卡夏、薄荷，上週都是第一次</strong></a>
+    </nav>
+  </footer>
+</div>
+
+<hr class="pv-sep">
+
+<!-- ===== Archive ===== -->
+<p class="pv-tag">03 — 旅途紀錄 archive.md</p>
+<div class="container" id="archive">
+  <div class="archive-header">
+    <h1>旅途紀錄</h1>
+    <p>每週一篇，從 2026 年開始。</p>
+  </div>
+
+  <div class="year-group">
+    <div class="year-label">2026</div>
+    <div class="post-list">
+      <a href="#" class="post-list-item">
+        <div class="post-list-left">
+          <div class="post-list-title">2026 Week31: 我不急著升級，先把已經有的養好</div>
+          <div class="post-list-excerpt">上週還好嗎？ 上週的我種植物種得很認真，薄荷換盆以後也開始長了。另外出門了幾趟，還又開始清理手邊的東西，看看哪些是幾乎不用的、哪些是必要的。</div>
+        </div>
+        <span class="post-list-date">8/3</span>
+      </a>
+      <a href="#" class="post-list-item">
+        <div class="post-list-left">
+          <div class="post-list-title">2026 Week30: 獵頭、佛卡夏、薄荷，上週都是第一次</div>
+          <div class="post-list-excerpt">上週有嘗試什麼有趣的事情嗎？ 上週的我去了一場線上面試、自己做了佛卡夏，還去了一趟市中心。</div>
+        </div>
+        <span class="post-list-date">7/27</span>
+      </a>
+      <a href="#" class="post-list-item">
+        <div class="post-list-left">
+          <div class="post-list-title">2026 Week29: 當全世界都是系統，我開始懷疑框架</div>
+          <div class="post-list-excerpt">上週有嘗試什麼新事物嗎？ 上週的我大概就是重新適應了家裡的作息，因為家裡的狀況跟之前不太一樣。</div>
+        </div>
+        <span class="post-list-date">7/20</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<hr class="pv-sep">
+
+<!-- ===== 分類頁 ===== -->
+<p class="pv-tag">04 — 足跡 categories.md</p>
+<div class="container">
+  <div class="category-group" style="padding-top:40px">
+    <div class="category-title">依年份</div>
+    <div class="year-list">
+      <a href="#" class="year-link">2026</a>
+      <a href="#" class="year-link">2025</a>
+    </div>
+  </div>
+</div>
+
+<hr class="pv-sep">
+
+<!-- ===== 色票 ===== -->
+<p class="pv-tag">05 — 色票對照</p>
+<div class="container" style="padding-bottom:120px">
+  <p class="section-title" style="margin-top:24px">Primary</p>
+  <div class="sw-grid">
+    <div class="sw"><i style="background:#FAF8F5;border-bottom:1px solid var(--border)"></i><b>Linen White</b><small>#FAF8F5</small></div>
+    <div class="sw"><i style="background:#F6F3EB"></i><b>Warm Ivory</b><small>#F6F3EB</small></div>
+    <div class="sw"><i style="background:#C7D6CC"></i><b>Soft Sage</b><small>#C7D6CC</small></div>
+    <div class="sw"><i style="background:#DCE6DE"></i><b>Pale Sage</b><small>#DCE6DE</small></div>
+    <div class="sw"><i style="background:#B7C7BA"></i><b>Mist Green</b><small>#B7C7BA</small></div>
+  </div>
+
+  <p class="section-title" style="margin-top:28px">Accent</p>
+  <div class="sw-grid">
+    <div class="sw"><i style="background:#71AEA6"></i><b>Lake Green</b><small>#71AEA6 · 僅填色</small></div>
+    <div class="sw"><i style="background:#326B63"></i><b>Deep Lake ★</b><small>#326B63 · 新增 4.8:1</small></div>
+    <div class="sw"><i style="background:#9FD8D0"></i><b>Sea Glass</b><small>#9FD8D0</small></div>
+    <div class="sw"><i style="background:#8FA897"></i><b>Soft Moss</b><small>#8FA897</small></div>
+    <div class="sw"><i style="background:#AAB8AC"></i><b>Sage Grey</b><small>#AAB8AC</small></div>
+  </div>
+
+  <p class="section-title" style="margin-top:28px">Text / Border / Atlas</p>
+  <div class="sw-grid">
+    <div class="sw"><i style="background:#37403B"></i><b>Forest Ink</b><small>#37403B · 13.1:1</small></div>
+    <div class="sw"><i style="background:#55615B"></i><b>Moss Text</b><small>#55615B · 6.2:1</small></div>
+    <div class="sw"><i style="background:#8A938D"></i><b>Light Text</b><small>#8A938D · 裝飾用</small></div>
+    <div class="sw"><i style="background:#D9E2DA"></i><b>Soft Border</b><small>#D9E2DA</small></div>
+    <div class="sw"><i style="background:#E9F4F2"></i><b>Frost Glass</b><small>#E9F4F2</small></div>
+  </div>
+</div>
+</main>
+
+<nav class="float-nav">
+  <a href="#" class="float-nav-item active">起點</a>
+  <a href="#archive" class="float-nav-item">旅途紀錄</a>
+  <a href="#" class="float-nav-item">足跡</a>
+</nav>
+
+<footer class="site-footer">
+  <div class="container">© 2026 Claire Daily</div>
+</footer>
+
+</body>
+</html>

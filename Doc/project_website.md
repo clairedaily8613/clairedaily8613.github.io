@@ -17,17 +17,22 @@ metadata:
 
 ## 品牌色
 
+> **已於 2026-08-05 換成 The Knowledge Seeker 配色。**
+> 權威來源：`Vault/00_CreationSystem/Brand/Characters/the-knowledge-seeker/website-palette.md`
+> 實作：`style-seeker.css`；規則寫在 `.claude/skills/clairedaily-website/SKILL.md`。
+> 下表為**舊配色，已停用**，僅保留作為歷史紀錄。
+
 | 變數 | 色碼 | 用途 | 比例 |
 |------|------|------|------|
-| `--bg` | `#FBF7EF` | 頁面底色 | 70% |
-| `--primary` | `#2F4A45` | 主要文字、深色元素 | 20% |
-| `--accent` | `#C86B4A` | 強調、hover、CTA | 4% |
-| `--muted` | `#7E8F9A` | 次要文字、說明文 | 3% |
-| `--gold` | `#D8B56D` | 年份標籤、點綴 | 3% |
+| ~~`--bg`~~ | ~~`#FBF7EF`~~ | 頁面底色 | 70% |
+| ~~`--primary`~~ | ~~`#2F4A45`~~ | 主要文字、深色元素 | 20% |
+| ~~`--accent`~~ | ~~`#C86B4A`~~ | 強調、hover、CTA | 4% |
+| ~~`--muted`~~ | ~~`#7E8F9A`~~ | 次要文字、說明文 | 3% |
+| ~~`--gold`~~ | ~~`#D8B56D`~~ | 年份標籤、點綴 | 3% |
 | `--surface` | `#FFFFFF` | 卡片背景 | — |
-| `--border` | `#E8E2D8` | 線條、分隔 | — |
+| ~~`--border`~~ | ~~`#E8E2D8`~~ | 線條、分隔 | — |
 
-字型：Lora（標題serif） + Plus Jakarta Sans（內文sans-serif），Google Fonts。
+字型未變：Lora（標題serif） + Plus Jakarta Sans（內文sans-serif），Google Fonts。
 
 ---
 
